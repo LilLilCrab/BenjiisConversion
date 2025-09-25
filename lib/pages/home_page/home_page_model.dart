@@ -1,0 +1,23 @@
+import '/flutter_flow/flutter_flow_util.dart';
+import 'home_page_widget.dart' show HomePageWidget;
+import 'package:flutter/material.dart';
+
+class HomePageModel extends FlutterFlowModel<HomePageWidget> {
+  ///  State fields for stateful widgets in this page.
+
+  // State field(s) for EnterDegrees widget.
+  FocusNode? enterDegreesFocusNode;
+  TextEditingController? enterDegreesTextController;
+  String? Function(BuildContext, String?)? enterDegreesTextControllerValidator;
+  // State field(s) for Switch widget.
+  bool? switchValue;
+
+  @override
+  void initState(BuildContext context) {}
+
+  @override
+  void dispose() {
+    enterDegreesFocusNode?.dispose();
+    enterDegreesTextController?.dispose();
+  }
+}
